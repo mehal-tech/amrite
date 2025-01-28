@@ -13,7 +13,6 @@ For additional OS or WASI runtime support please raise an issue in this repo or 
 
 |OS|Version|WASI Runtimes|
 |---|---|---|
-|Ubuntu|22.04|WasmEdge|
 |Ubuntu|24.04|WasmEdge|
 |Fedora|41|WasmEdge|
 
