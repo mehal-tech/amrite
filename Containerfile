@@ -53,8 +53,8 @@ RUN mv crun crun-wasmedge
 
 FROM scratch 
 
-WORKDIR "/vendor/ubuntu_22_04"
-COPY --from=ubuntu22builder /usr/local/lib64/libwasmedge.so.0 /crun/crun-wasmedge ./
+# WORKDIR "/vendor/ubuntu_22_04"
+# COPY --from=ubuntu22builder /usr/local/lib64/libwasmedge.so.0 /crun/crun-wasmedge ./
 
 WORKDIR "/vendor/ubuntu_24_04"
 COPY --from=ubuntu24builder /usr/local/lib64/libwasmedge.so.0 /crun/crun-wasmedge ./
