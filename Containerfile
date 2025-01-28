@@ -37,7 +37,7 @@ RUN mv crun crun-wasmedge
 
 FROM fedora:41 as fedora41builder
 ARG REMOTE_ARCH
-RUN sudo dnf install -y make python git gcc automake autoconf libcap-devel \
+RUN dnf install -y make python git gcc automake autoconf libcap-devel \
     systemd-devel yajl-devel libseccomp-devel pkg-config \
     go-md2man glibc-static python3-libmount libtool xz
 RUN curl -L https://github.com/WasmEdge/WasmEdge/releases/download/0.14.1/WasmEdge-0.14.1-manylinux2014_${REMOTE_ARCH}.tar.xz | tar xJf - -C /usr/local --strip-components=1
