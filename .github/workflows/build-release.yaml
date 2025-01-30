@@ -3,7 +3,7 @@ name: Build and Push Containers
 on:
   push:
     branches:
-      - '*'
+      - 'main'
     paths-ignore:
       - "**.md"
 
@@ -14,7 +14,7 @@ env:
   IMAGE_NAMESPACE: mehal-tech
 
 jobs:
-  push-quay:
+  push-ghcr:
     name: Build and push manifest
     permissions: write-all
     runs-on: ubuntu-latest
