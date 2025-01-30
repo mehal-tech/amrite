@@ -11,7 +11,7 @@ env:
   IMAGE_NAME: amrite
   IMAGE_TAGS: ${{ github.sha }}
   IMAGE_REGISTRY: ghcr.io
-  IMAGE_NAMESPACE: mehal-tech
+  IMAGE_NAMESPACE: ubiquitous-factory
 
 jobs:
   push-ghcr:
