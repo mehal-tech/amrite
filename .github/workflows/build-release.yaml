@@ -8,10 +8,10 @@ on:
       - "**.md"
 
 env:
-  IMAGE_NAME: amrite
+  IMAGE_NAME: ${{ github.repository }}
   IMAGE_TAGS: ${{ github.sha }}
   IMAGE_REGISTRY: ghcr.io
-  IMAGE_NAMESPACE: ubiquitous-factory
+  IMAGE_NAMESPACE: ${{ github.repository_owner }}
 
 jobs:
   push-ghcr:
