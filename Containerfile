@@ -30,7 +30,7 @@ RUN apt-get install -y curl g++ make git gcc build-essential pkgconf libtool lib
 # Direct download of the generic package as the arm version isn't available
 RUN curl -L https://github.com/WasmEdge/WasmEdge/releases/download/0.14.1/WasmEdge-0.14.1-manylinux2014_${REMOTE_ARCH}.tar.xz | tar xJf - -C /usr/local --strip-components=1
 WORKDIR /
-RUN git clone --depth 1 -b 1.8 --recursive https://github.com/containers/crun.git
+RUN git clone --depth 1 -b 1.19.1 --recursive https://github.com/containers/crun.git
 WORKDIR /crun
 RUN ./autogen.sh
 RUN ./configure --with-wasmedge --enable-embedded-yajl
